@@ -1,0 +1,8 @@
+import math
+def parrol(base,height):
+    area=base*height
+    return area
+base = int(input())
+height = int(input())    
+area= parrol(base,height)
+print(area)

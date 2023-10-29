@@ -1,0 +1,11 @@
+#area=(a+b)×h/2
+def trap(base1, base2, height):
+    area = ((base1 + base2) *height)/2
+    return area
+height =int(input())
+base1 = int(input())
+base2 = int(input())
+area = trap(base1, base2, height)
+print(area)
+
+

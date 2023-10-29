@@ -1,0 +1,7 @@
+import math
+def d_to_r(deg):
+    rad= deg* (math.pi / 180)
+    return rad
+deg = int(input())
+rad= d_to_r(deg)
+print(rad)

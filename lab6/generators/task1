@@ -1,0 +1,7 @@
+def generate_squares(n):
+    for i in range(n):
+        yield i**2
+n = int(input())
+sg = generate_squares(n)
+for square in sg:
+    print(square)

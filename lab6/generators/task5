@@ -1,0 +1,7 @@
+def cc(n):
+    for num in reversed(range(n + 1)):
+        yield num
+n = int(input())
+for num in cc(n):
+    print(num)
+
