@@ -1,0 +1,9 @@
+def func(str):
+    if 'a' in str and str.endswith('b'):
+        i =str.index('a')
+        if 'b' in str[i:]:
+            print("match")
+            return
+    print("doesn't match")
+s1= input()
+func(s1)

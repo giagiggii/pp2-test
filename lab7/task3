@@ -1,0 +1,7 @@
+def func(str):
+    words =str.split('_')
+    for i in words:
+        if i.islower():
+            print("Found a sequence:", i)
+s1= input()
+func(s1)

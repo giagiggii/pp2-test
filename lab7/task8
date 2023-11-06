@@ -1,0 +1,12 @@
+def func(str):
+    end= [str[0]]
+    for char in str[1:]:
+        if char.isupper():
+            end.append(char)
+        else:
+            end[-1] += char
+    return end
+
+s1= input()
+res=func(s1)
+print(res)

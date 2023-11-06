@@ -1,0 +1,5 @@
+def func(str):
+    new_str = ''.join([':' if char in (' ', ',', '.') else char for char in str])
+    print(new_str)
+s1= input()
+func(s1)

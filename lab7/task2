@@ -1,0 +1,10 @@
+def func(str):
+    if 'a' in str:
+        i =str.index('a')
+        count = str[i+ 1:].count('b')
+        if 2<=count<= 3:
+            print("match")
+            return
+    print("doesn't match")
+s1= input()
+func(s1)
