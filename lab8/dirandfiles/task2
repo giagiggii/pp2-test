@@ -1,0 +1,19 @@
+import os
+def checks(val):
+    if os.path.exists(val):
+        if os.access(val, os.R_OK):
+            print(val,'is read')
+        else:
+            print(val,'is not read')
+        if os.access(val, os.W_OK):
+            print(val,'is writ')
+        else:
+            print(val,'is not writ')
+        if os.access(val, os.X_OK):
+            print(val,'is execut')
+        else:
+            print(val,'is not execut')
+    else:
+        print("don't")
+val= input()
+checks(val)

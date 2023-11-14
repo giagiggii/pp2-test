@@ -1,0 +1,11 @@
+def count_upp(string):
+    uppers= sum(1 for char in string if char.isupper())
+    return uppers
+def count_low(string):
+    lowers = sum(1 for char in string if char.islower())
+    return lowers 
+str= input()
+upper= count_upp(str)
+lower=count_low(str)
+print(upper, 'and', lower)
+

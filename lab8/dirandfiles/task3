@@ -1,0 +1,11 @@
+import os
+def find(value):
+    if os.path.exists(value):
+        print('exists')
+        directory,filename = os.val.split(value)
+        print(filename)
+        print(directory)
+    else:
+        print('does not exist')
+val= input()
+find(val)

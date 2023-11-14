@@ -1,0 +1,12 @@
+def is_palindrome(str):
+    str1 = ''.join(str.split())
+    length=len(str1)
+    for i in range(length//2):
+        if str1[i].lower()!= str1[length-1- i].lower():
+            return False
+    return True
+str= input()
+if is_palindrome(str):
+    print("is a palindrome")
+else:
+    print("not a palindrome")

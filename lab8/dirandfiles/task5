@@ -1,0 +1,12 @@
+def func(path,list1):
+    if isinstance(path, str) and isinstance(list1, list):
+        with open(path,'w') as file:
+            for item in list1:
+                file.write(str(item) +'\n')
+        print(path)
+    else:
+        print()
+path= input()
+str1= input()
+list1=str1.split()
+func(path,list1)

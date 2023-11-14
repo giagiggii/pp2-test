@@ -1,0 +1,8 @@
+from functools import reduce
+def mult(num):
+    result = reduce(lambda x, y: x * y,num)
+    return result
+n=input()
+num=list(map(int, n.split()))
+result = mult(num)
+print(result)

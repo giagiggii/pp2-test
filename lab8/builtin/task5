@@ -1,0 +1,6 @@
+def allt(val):
+    return all(val)
+bols= input().split()
+bools= tuple(bool(value.lower()=='true') for value in bols)
+result = allt(bools)
+print(result)

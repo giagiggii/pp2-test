@@ -1,0 +1,7 @@
+import time
+import math
+num= int(input())
+mls=int(input())
+time.sleep(mls/ 1000)
+result =math.sqrt(num)
+print('Square root of', num, 'after',mls, 'milliseconds is',result)
